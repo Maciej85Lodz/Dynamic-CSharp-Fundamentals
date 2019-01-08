@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringToDynamic", "Ref
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicallyAddingExpandoObjectBehaviour", "DynamicallyAddingExpandoObjectBehaviour\DynamicallyAddingExpandoObjectBehaviour.csproj", "{C992B61A-5372-4355-9177-F9D6DA376016}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntroductionToCsharp", "IntroductionToCsharp", "{1B333288-A11D-448E-9F1A-FA0D0EEC81E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC73A1AB-B0AF-4800-B173-D79B5C8F9922} = {1B333288-A11D-448E-9F1A-FA0D0EEC81E4}
+		{94E2D568-EF6A-425E-945F-CDCA0BFB42BD} = {1B333288-A11D-448E-9F1A-FA0D0EEC81E4}
+		{85C5D046-C15E-43E6-8942-214C7AE027E6} = {1B333288-A11D-448E-9F1A-FA0D0EEC81E4}
+		{C992B61A-5372-4355-9177-F9D6DA376016} = {1B333288-A11D-448E-9F1A-FA0D0EEC81E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2856B9C3-ADFF-4E8F-BCCE-CFAFA5146155}
