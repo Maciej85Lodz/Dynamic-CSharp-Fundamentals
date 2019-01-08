@@ -11,7 +11,8 @@ I'll also discover how the dynamic keyword can reduce XAML boilerplate binding c
 By the end of this course, I'll know how to take advantage of dynamic C# in order to reduce the amount of code that needs to be written, make it more readable, and give yourself more time to deliver more features to the customer.
 
 
-POLISH (translate)
+POLISH (translate):
+
 C # jest statycznie napisanym językiem, ma również (często pomijane) funkcje dynamiczne. 
 Na przykład użycie słowa kluczowego dynamicznego umożliwia instancję obiektów dynamicznych, których struktura nie jest znana kompilatorowi podczas kompilacji. 
 W tym kursie, Dynamic C # Fundamentals, uczę się, jak użycie dynamicznego C # ułatwia pisanie i pracę z trudnymi i uciążliwymi programami. 
