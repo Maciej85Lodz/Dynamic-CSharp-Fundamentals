@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
+using System.Text;
 using static System.Console;
 
 namespace ConsoleApplication
@@ -8,9 +10,12 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            var customer = new Dictionary<string, string>();
+            dynamic customer = new ExpandoObject();
 
-            customer.Add("ID", "42");
+            customer.Id = "42";
+            WriteLine(customer.Id);
+
+            customer.sb = new StringBuilder("a string builder");
 
             WriteLine("(enter 'done' to complete adding properties)");
 
@@ -20,16 +25,19 @@ namespace ConsoleApplication
             {
                 string propertyValue = GetPropertyValue();
 
-                customer.Add(propertyName, propertyValue);
+                var c = (IDictionary<string, object>) customer;
+
+                c.Add(propertyName, propertyValue);
 
                 propertyName = GetPropertyName();
             }
 
             WriteLine("\nCUSTOMER PROPERTIES");
-            foreach (var item in customer)
+            foreach (KeyValuePair<string,object> item in customer)
             {
                 WriteLine($"{item.Key} : {item.Value}");
             }
+            WriteLine(customer.FirstName);
 
             WriteLine("\n\nPress enter to exit...");
             ReadLine();
@@ -48,5 +56,5 @@ namespace ConsoleApplication
             return ReadLine();
         }
     }
-
+  
 }
