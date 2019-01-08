@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static System.Console;
-using System.Globalization;
 
 
 namespace DynamicCSharpFundamentals
@@ -13,36 +8,38 @@ namespace DynamicCSharpFundamentals
     {
         static void Main(string[] args)
         {
-            OutputTimeStaticBinding();
-            OutputTimeDynamicBinding();
-            OutputTimeDynamicBindingRunTimeError();
+            //OutputTimes.OutputTimeStaticBinding();
+            //OutputTimes.OutputTimeDynamicBinding();
+            //OutputTimes.OutputTimeDynamicBindingRunTimeError();
+
+            int i = 42;
+            dynamic di = i;
+            int i2 = di;
+            WriteLine($"i = {i} di = {di} i2 = {i2}");
+
+
+            //string s = "hello";
+            //dynamic ds = s;
+            //int x = ds;
+            long l = 99;
+            dynamic dl = l;
+            int y = (int)dl;
+
+
+            WriteLine($"l = {l} dl = {dl} y = {y}");
+
+            dynamic z = "Hi Maciej";
+
+            WriteLine($"z is a {z.GetType()} = {z}");
+
+            z = 42;
+            WriteLine($"z is a {z.GetType()} = {z}");
+
 
             WriteLine("\n\nPress enter to exit...");
             ReadLine();
         }
 
-        private static void OutputTimeStaticBinding()
-        {
-            DateTime dt = DateTime.Now;                       
-            string time = dt.ToLongDateString();
-
-            WriteLine(time);
-        }
-
-        private static void OutputTimeDynamicBinding()
-        {
-            dynamic dt = DateTime.Now;
-            string time = dt.ToLongDateString();
-
-            WriteLine(time);
-        }
-
-        private static void OutputTimeDynamicBindingRunTimeError()
-        {
-            dynamic dt = DateTime.Now;
-            string time = dt.IsItCoffeeTime();
-
-            WriteLine(time);
-        }
+        
     }
 }
