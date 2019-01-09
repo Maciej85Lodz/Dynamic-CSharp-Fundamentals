@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonMath.cs" />
+    <Compile Include="CommonMathDynamic.cs" />
+    <Compile Include="CommonMathDynamicWithGenerics.cs" />
+    <Compile Include="CommonMathDynamicWithGenericsExplicitCast.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
