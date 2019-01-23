@@ -1,0 +1,20 @@
+﻿{
+  "Customers": [
+    {
+      "firstName": "Maciej",
+      "secondName": "Me"
+    },
+    {
+      "firstName": "Gentry",
+      "secondName": "Jones"
+    },
+    {
+      "firstName": "Sarah",
+      "secondName": "Smith"
+    },
+    {
+      "firstName": "Peter",
+      "secondName": "McCoy"
+    }
+  ]
+}
