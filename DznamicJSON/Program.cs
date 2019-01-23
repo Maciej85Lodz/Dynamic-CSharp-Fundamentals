@@ -4,21 +4,15 @@ using static System.Console;
 
 namespace ConsoleApplication
 {
-    class Customer
-    {
-        public string FirstName { get; set; }
-        public string SecondName { get; set; }
-    }
-
     class Program
     {
-        const string CustomerJson = "{'FirstName': 'Sarah','SecondName': 'Smith'}";
+        const string CustomerJson = "{'firstName': 'Maciej','SecondName': 'Smith'}";
 
         static void Main(string[] args)
         {
-            Customer c = JsonConvert.DeserializeObject<Customer>(CustomerJson);
+            dynamic c = JsonConvert.DeserializeObject(CustomerJson);
 
-            var firstName = c.FirstName;
+            var firstName = c.firstName;
             var secondName = c.SecondName;
 
             WriteLine($"Customer name is: {firstName} {secondName}");
