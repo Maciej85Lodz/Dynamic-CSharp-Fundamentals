@@ -10,9 +10,9 @@ namespace CustomerDataViewer
 
             dynamic customerData = new ExpandoObject();
 
-            customerData.FirstName = "Gentry";
+            customerData.FirstName = "Maciej";
             customerData.SecondName = "Jones";
-            customerData.Height = 170;
+            customerData.Height = 186;
             customerData.Age = 33;
 
             return customerData;

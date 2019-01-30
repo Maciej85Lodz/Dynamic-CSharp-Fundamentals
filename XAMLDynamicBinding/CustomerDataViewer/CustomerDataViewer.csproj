@@ -63,9 +63,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Customer.cs" />
     <Compile Include="CustomerDataServiceDynamic.cs" />
-    <Compile Include="CustomerDataServiceTyped.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

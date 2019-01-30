@@ -12,8 +12,8 @@ namespace CustomerDataViewer
 
         private void LoadData_OnClick(object sender, RoutedEventArgs e)
         {
-           DataContext = CustomerDataServiceTyped.GetCustomerData();
-           // DataContext = CustomerDataServiceDynamic.GetCustomerData();
+           //DataContext = CustomerDataServiceTyped.GetCustomerData();
+            DataContext = CustomerDataServiceDynamic.GetCustomerData();
         }
     }
 }
