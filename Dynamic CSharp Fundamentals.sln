@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicJSON_EXCEL", "Dynami
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicJSONWebAPI", "DynamicJSONWebAPI\DynamicJSONWebAPI.csproj", "{A46713A5-6DE6-4C30-B62E-FB7FB5804ACA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerDataViewer", "XAMLDynamicBinding\CustomerDataViewer\CustomerDataViewer.csproj", "{78C2AAA8-B1C4-49DC-9E2F-8DB9E7043DA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{A46713A5-6DE6-4C30-B62E-FB7FB5804ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A46713A5-6DE6-4C30-B62E-FB7FB5804ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A46713A5-6DE6-4C30-B62E-FB7FB5804ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C2AAA8-B1C4-49DC-9E2F-8DB9E7043DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C2AAA8-B1C4-49DC-9E2F-8DB9E7043DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C2AAA8-B1C4-49DC-9E2F-8DB9E7043DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C2AAA8-B1C4-49DC-9E2F-8DB9E7043DA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +96,7 @@ Global
 		{3DBA19F6-DC34-4B9A-9E95-DAD6301F1D1B} = {2DBD0A33-582D-4788-9DF0-2C891DF1F939}
 		{7665DCA1-B548-40D7-8DE6-7ADA4388B57B} = {2DBD0A33-582D-4788-9DF0-2C891DF1F939}
 		{A46713A5-6DE6-4C30-B62E-FB7FB5804ACA} = {2DBD0A33-582D-4788-9DF0-2C891DF1F939}
+		{78C2AAA8-B1C4-49DC-9E2F-8DB9E7043DA1} = {2DBD0A33-582D-4788-9DF0-2C891DF1F939}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2856B9C3-ADFF-4E8F-BCCE-CFAFA5146155}
